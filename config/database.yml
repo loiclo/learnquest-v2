@@ -17,19 +17,21 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV.fetch("POSTGRES_HOST") %>
+  username: <%= ENV.fetch("POSTGRES_USER") %>
+  password: <%= ENV.fetch("POSTGRES_PASSWORD") %>
+
 
 development:
   <<: *default
-  database: learnquest_v2_development
+  database: <%= ENV.fetch("DATABASE") %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: learnquest_v2
+  #username: nextjs_on_rails
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: learnquest_v2_test
+  database: nextjs_on_rails_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: learnquest_v2_production
-  username: learnquest_v2
-  password: <%= ENV["LEARNQUEST_V2_DATABASE_PASSWORD"] %>
+  database: nextjs_on_rails_production
+  username: nextjs_on_rails
+  password: <%= ENV["NEXTJS_ON_RAILS_DATABASE_PASSWORD"] %>

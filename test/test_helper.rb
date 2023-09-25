@@ -1,13 +1,22 @@
-ENV["RAILS_ENV"] ||= "test"
-require_relative "../config/environment"
-require "rails/test_help"
+# frozen_string_literal: true
 
-class ActiveSupport::TestCase
-  # Run tests in parallel with specified workers
-  parallelize(workers: :number_of_processors)
+require 'simplecov'
+SimpleCov.start
 
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
+ENV['RAILS_ENV'] ||= 'test'
+require_relative '../config/environment'
+require 'rails/test_help'
+require 'mocha/minitest'
+require 'webmock/minitest'
 
-  # Add more helper methods to be used by all tests here...
+module ActiveSupport
+  class TestCase
+    parallelize(workers: :number_of_processors)
+    include FactoryBot::Syntax::Methods
+
+    def get_auth_headers(user)
+      token = JsonWebToken.encode(user_id: user.id)
+      { 'Authorization' => "Token #{token}" }
+    end
+  end
 end
