@@ -1,0 +1,23 @@
+.logo-container {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement si nécessaire */
+  height: 100%; /* Pour que le conteneur occupe toute la hauteur de son parent */
+}
+
+.logo {
+  height: 17em;
+  margin: 0 auto; /* Pour centrer horizontalement si nécessaire */
+}
+
+
+.homepagebg{
+    background-image: url("/images/background1.png") ;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    height: 87vh;
+    overflow: hidden;
+  }
+
+  
