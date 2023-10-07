@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { userFromCookie } from '../utils';
 
 const Home = ({}) => {
+
   return (
     <div className="homepagebg">
       <Head>
@@ -13,6 +14,7 @@ const Home = ({}) => {
         <img src="/images/learnquestslogoandslogan.png" alt="LearnQuest Logo" className="logo" />
       </div>
     </div>
+
   );
 };
 

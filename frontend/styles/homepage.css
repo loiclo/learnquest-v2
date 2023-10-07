@@ -1,3 +1,12 @@
+.homepagebg {
+  background-image: url("/images/background1.png");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .logo-container {
   display: flex;
   align-items: center; /* Centrer verticalement */
@@ -6,18 +15,39 @@
 }
 
 .logo {
-  height: 17em;
+  height: 18vw;
   margin: 0 auto; /* Pour centrer horizontalement si nécessaire */
 }
 
-
-.homepagebg{
-    background-image: url("/images/background1.png") ;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
-    height: 87vh;
-    overflow: hidden;
+@media (max-width: 380px) {
+  .logo {
+    height: 45vw; 
   }
+  .homepagebg {
+    background-image: url("/images/background-little-vertical.png");}
 
-  
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 28vw;
+  }
+  .homepagebg {
+    background-image: url("/images/background-little-vertical.png");}
+}
+
+@media (max-width: 835px) {
+  .logo {
+    height: 28vw;
+  }
+  .homepagebg {
+    background-image: url("/images/background-little-vertical.png");}
+}
+
+@media (max-width: 885px) {
+  .logo {
+    height: 28vw;
+  }
+  .homepagebg {
+    background-image: url("/images/background-little-vertical.png");}
+}
