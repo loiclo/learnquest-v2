@@ -10,12 +10,54 @@ const Home = ({}) => {
         <meta name='description' content="Apprendre en s'amusant" />
         <link rel='icon' href='/images/faviconlq.png' />
       </Head>
+      
       <div className="logo-container">
         <img src="/images/learnquestslogoandslogan.png" alt="LearnQuest Logo" className="logo" />
       </div>
+      <div id="leaves">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
     </div>
-
+    
   );
 };
 
 export default Home;
+
