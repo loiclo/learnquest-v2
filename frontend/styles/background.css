@@ -1,0 +1,42 @@
+.background {
+    background-image: url("/images/background1.png");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  @media (max-width: 380px) {
+    .logo {
+      height: 45vw; 
+    }
+    .background {
+      background-image: url("/images/background-little-vertical.png");}
+  
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      height: 28vw;
+    }
+    .background {
+      background-image: url("/images/background-little-vertical.png");}
+  }
+  
+  @media (max-width: 835px) {
+    .logo {
+      height: 28vw;
+    }
+    .background {
+      background-image: url("/images/background-little-vertical.png");}
+  }
+  
+  @media (max-width: 885px) {
+    .logo {
+      height: 28vw;
+    }
+    .background {
+      background-image: url("/images/background-little-vertical.png");}
+  }
+  
