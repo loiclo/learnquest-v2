@@ -10,7 +10,6 @@
     height: 16vw;
     margin: 0 auto;
     margin-top: 35px;
-    
   }
   
   .inventaire {
@@ -20,3 +19,80 @@
   .spacer{
     width: 15%;
   }
+
+  @media (max-width: 380px) {
+    .avatar-inventaire-container {
+        flex-direction: column; 
+        justify-content: center;
+      }
+      
+    .avatar {
+        height: 45vw;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        order: 2;
+      }
+      
+    .inventaire {
+        height: 60vw;
+        order: 1;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .avatar-inventaire-container {
+        flex-direction: column; 
+        justify-content: center;
+      }
+      
+    .avatar {
+        height: 45vw;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        order: 2;
+      }
+      
+    .inventaire {
+        height: 80vw;
+        order: 1;
+      }
+  }
+
+  @media (max-width: 835px) {
+    .avatar-inventaire-container {
+        flex-direction: column; 
+        justify-content: center;
+      }
+      
+    .avatar {
+        height: 30vw;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        order: 2;
+      }
+      
+    .inventaire {
+        height: 80vw;
+        order: 1;
+      }
+  }
+  
+  @media (max-width: 885px) {
+    .avatar-inventaire-container {
+        flex-direction: column; 
+        justify-content: center;
+      }
+      
+    .avatar {
+        height: 30vw;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        order: 2;
+      }
+      
+    .inventaire {
+        height: 60vw;
+        order: 1;
+      }
+  }
+  
