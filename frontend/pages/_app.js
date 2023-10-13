@@ -3,6 +3,7 @@ import '../styles/homepage.css';
 import '../styles/leaves.css';
 import '../styles/background.css';
 import '../styles/transition.css';
+import '../styles/inventaire.css';
 import { CookiesProvider } from 'react-cookie';
 import { Toaster } from 'react-hot-toast';
 import Layout from '/components/Layout';

@@ -1,0 +1,22 @@
+.avatar-inventaire-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .avatar {
+    height: 16vw;
+    margin: 0 auto;
+    margin-top: 35px;
+    
+  }
+  
+  .inventaire {
+    margin: 0 auto;
+  }
+
+  .spacer{
+    width: 15%;
+  }

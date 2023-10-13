@@ -9,21 +9,18 @@ return(
         <div className="avatar-inventaire-container">
 
             <div className="avatar">
+                <img src="/images/avatar1.png" alt="Avatar1" className="avatar" />
             </div>
 
+            <div className="spacer"></div>
+
             <div className="inventaire">
-                <image src="/images/panneau-inventaire.png" alt="Inventaire" className="panneau-inventaire" />
+                <img src="/images/panneau-inventaire.png" alt="Inventaire" id="panneau-inventaire" />
             </div>
         </div>
 
     </div>
 
 );
-
-
-
-
-
-
 }
 export default Profile;
